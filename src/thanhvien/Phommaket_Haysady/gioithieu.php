@@ -4,7 +4,7 @@ $hoten   = "Phommaket Haysady";
 $masv    = "3120224181";
 $lop     = "24CNTT3";
 $vaitro  = "Thành viên (Member)";
-$sothich = "Thiết kế giao diện Front-end, chơi cầu lông, du lịch, nghe nhạc";
+$sothich = "Thiết kế giao diện Front-end, du lịch, nghe nhạc";
 ?>
 <!DOCTYPE html>
 <html lang="vi">
