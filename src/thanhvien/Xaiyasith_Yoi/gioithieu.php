@@ -4,7 +4,7 @@ $hoten   = "Xaiyasith Yoi";
 $masv    = "3120224189";
 $lop     = "24CNTT3";
 $vaitro  = "Nhóm trưởng (Team Leader)";
-$sothich = "Lập trình web, nghiên cứu công nghệ mới, chơi bóng đá, nghe nhạc";
+$sothich = "Lập trình web, nghiên cứu công nghệ mới, đọc sách, nghe nhạc";
 ?>
 <!DOCTYPE html>
 <html lang="vi">
