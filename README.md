@@ -1,96 +1,50 @@
-# BÀI TẬP THỰC HÀNH NHÓM SỐ 1 - NHÓM 12
-## MÔN: THIẾT KẾ VÀ LẬP TRÌNH WEB (KHOA TOÁN - TIN, TRƯỜNG ĐH SƯ PHẠM - ĐH ĐÀ NẴNG)
+# Bài Tập Thực Hành Nhóm 1 - Nhóm 12
+
+**Môn học:** Thiết kế và Lập trình Web  
+**Khoa / Trường:** Khoa Toán - Tin, Trường ĐH Sư phạm – ĐH Đà Nẵng  
+**Lớp:** 24CNTT3
 
 ---
 
-### 👥 DANH SÁCH THÀNH VIÊN NHÓM 12 (LỚP 24CNTT3)
+## 👥 Thành viên nhóm
 
-1. **Xaiyasith Yoi** – MSV: **3120224189** (Nhóm trưởng)
-2. **Phommaket Haysady** – MSV: **3120224181** (Thành viên)
-3. **Vongsena Sauphasith** – MSV: **3120224186** (Thành viên)
+| STT | Họ và tên | Mã sinh viên | Vai trò |
+|:---:|---|:---:|---|
+| 1 | **Xaiyasith Yoi** | 3120224189 | Nhóm trưởng |
+| 2 | **Phommaket Haysady** | 3120224181 | Thành viên |
+| 3 | **Vongsena Sauphasith** | 3120224186 | Thành viên |
 
 ---
 
-### 📂 CẤU TRÚC THƯ MỤC DỰ ÁN
+## 📂 Cấu trúc thư mục
 
 ```text
-Yoi_Laptrinh_Web/
-├── docs/                                   # Tài liệu báo cáo và slide thuyết trình
-│   ├── Nhom12_Baitap1_BaoCao.md            # Báo cáo hoàn chỉnh 8-12 trang chuẩn theo Rubric R1.2
-│   ├── Slide_Nhom12_Baitap1.md             # Kịch bản 10 slide thuyết trình (5-7 phút)
-│   └── HuongDan_ChupAnh_DevTools.md        # Hướng dẫn chụp 6 ảnh minh chứng thực tế
-│
-├── src/                                    # Mã nguồn PHP theo yêu cầu mục 2.3
-│   ├── hello.php                           # Trang PHP đầu tiên (date, phpinfo)
-│   └── thanhvien/                          # Thư mục chứa trang cá nhân của từng thành viên
+ltweb-btn1-nhom12/
+├── src/
+│   ├── hello.php                   # Trang PHP đầu tiên (date, phpinfo)
+│   └── thanhvien/                  # Trang giới thiệu thành viên
 │       ├── Xaiyasith_Yoi/
-│       │   └── gioithieu.php
 │       ├── Phommaket_Haysady/
-│       │   └── gioithieu.php
 │       └── Vongsena_Sauphasith/
-│           └── gioithieu.php
-│
-├── BaiTapNhom1_Chuong1.md                  # Đề bài gốc của học phần
-└── README.md                               # Hướng dẫn quản lý mã nguồn và nộp bài
+├── Hinh*.jpg                       # Ảnh minh chứng thực hành & DevTools
+├── BaiTapNhom1_Chuong1.md          # Đề bài thực hành
+└── README.md                       # Tài liệu dự án
 ```
 
 ---
 
-### 🚀 HƯỚNG DẪN ĐƯA CODE LÊN GITHUB (MỖI THÀNH VIÊN 1 COMMIT)
+## 🚀 Hướng dẫn chạy trên Localhost
 
-Để đạt điểm tối đa ở tiêu chí C (kho GitHub đủ commit của từng thành viên):
-
-#### Bước 1: Nhóm trưởng (Xaiyasith Yoi) khởi tạo kho trên GitHub
-1. Đăng nhập vào tài khoản GitHub cá nhân.
-2. Tạo mới một repository đặt tên là: `ltweb-btn1-nhom12` (chế độ Public).
-3. Thêm 2 bạn còn lại làm Collaborator (Cộng tác viên) vào repo:
-   - Vào **Settings** $\rightarrow$ **Collaborators** $\rightarrow$ **Add people** $\rightarrow$ Nhập username GitHub của 2 bạn.
-
-#### Bước 2: Nhóm trưởng push mã nguồn ban đầu từ máy tính
-Mở PowerShell tại thư mục `c:\Users\asus\Downloads\Yoi_Laptrinh_Web`:
-```bash
-git init
-git config user.name "Xaiyasith Yoi"
-git config user.email "your-email@gmail.com"
-git branch -M main
-git remote add origin https://github.com/Xaiyasith-Yoi/ltweb-btn1-nhom12.git
-git add .
-git commit -m "feat(init): khoi tao ma nguon va tai lieu nhom 12"
-git push -u origin main
-```
-
-#### Bước 3: Thành viên 2 (Phommaket Haysady) commit tệp cá nhân
-Thực hiện trên máy tính của Phommaket Haysady:
-```bash
-git clone https://github.com/Xaiyasith-Yoi/ltweb-btn1-nhom12.git
-cd ltweb-btn1-nhom12
-git config user.name "Phommaket Haysady"
-git config user.email "haysady-email@gmail.com"
-git add src/thanhvien/Phommaket_Haysady/
-git commit -m "feat(member): them trang gioithieu cua Phommaket Haysady"
-git push origin main
-```
-
-#### Bước 4: Thành viên 3 (Vongsena Sauphasith) commit tệp cá nhân
-Thực hiện trên máy tính của Vongsena Sauphasith:
-```bash
-git clone https://github.com/Xaiyasith-Yoi/ltweb-btn1-nhom12.git
-cd ltweb-btn1-nhom12
-git config user.name "Vongsena Sauphasith"
-git config user.email "sauphasith-email@gmail.com"
-git pull origin main
-git add src/thanhvien/Vongsena_Sauphasith/
-git commit -m "feat(member): them trang gioithieu cua Vongsena Sauphasith"
-git push origin main
-```
+1. Khởi động **Apache** trong bảng điều khiển **XAMPP**.
+2. Đặt thư mục dự án vào `C:\xampp\htdocs\ltweb-btn1-nhom12`.
+3. Mở trình duyệt và truy cập:
+   - **Trang Hello:** [http://localhost/ltweb-btn1-nhom12/src/hello.php](http://localhost/ltweb-btn1-nhom12/src/hello.php)
+   - **Trang thành viên:** `http://localhost/ltweb-btn1-nhom12/src/thanhvien/<Ten_Thanh_Vien>/gioithieu.php`
 
 ---
 
-### 📦 ĐÓNG GÓI SẢN PHẨM NỘP BÀI (DEADLINE: TRƯỚC TUẦN 3)
+## 📌 Quản lý Git & Nộp bài
 
-Nhóm trưởng đăng nhập vào hệ thống e-Learning (`nhhai.net`) và nộp các file sau:
+- **Repository:** [https://github.com/xys-3y7/ltweb-btn1-nhom12](https://github.com/xys-3y7/ltweb-btn1-nhom12)
+- **Sản phẩm nộp:** Báo cáo PDF, Slide thuyết trình và mã nguồn nén `.zip`.
 
-1. **Báo cáo:** `Nhom12_Baitap1.pdf` (Từ file `docs/Nhom12_Baitap1_BaoCao.md` chèn thêm 6 ảnh minh chứng rồi xuất sang PDF).
-2. **Slide trình bày:** `Nhom12_Baitap1_slide.pptx` (hoặc `Nhom12_Baitap1_slide.pdf`) từ file `docs/Slide_Nhom12_Baitap1.md`.
-3. **Mã nguồn và ảnh chụp nén:** Nén toàn bộ thư mục `src/` và thư mục ảnh chụp kết quả thành tệp `LTW_BTN1_Nhom12_code.zip`.
-4. **Link GitHub:** Ghi kèm link `https://github.com/Xaiyasith-Yoi/ltweb-btn1-nhom12` vào phần ghi chú nộp bài.
